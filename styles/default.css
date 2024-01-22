@@ -3,7 +3,6 @@
 /* main styles */
 
 :root {
-	--tangerine-dull: #f27f0cc4;
 	--tangerine: #F27F0C;
 	--buttercup: #F7AD19;
 	--teal-blue: #053F5C;
@@ -83,7 +82,7 @@ a:hover {
 
 .brandBox {
 	grid-column-start: span 2;
-	background-color: var(--tangerine-dull);
+	background-color: var(--pelorous);
 }
 
 .brandBox h1,
@@ -104,6 +103,7 @@ a:hover {
 .brandBox div {
 	display: inline-block;
 	margin: 10px;
+	border: 3px solid var(--sky-blue);
 }
 
 .brandBox ul {
