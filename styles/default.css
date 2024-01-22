@@ -3,6 +3,7 @@
 /* main styles */
 
 :root {
+	--tangerine-dull: #f27f0cc4;
 	--tangerine: #F27F0C;
 	--buttercup: #F7AD19;
 	--teal-blue: #053F5C;
@@ -21,6 +22,17 @@ body{
 }
 
 /* text and image styles */ 
+
+header h1,
+header h3 {
+	display: inline-block
+}
+
+header h3 {
+	float: right;
+	position: relative;
+	top: 12px;
+}
 
 main{
 	display: grid;
@@ -52,7 +64,9 @@ h1, h2, h3{
 	color: var(--tangerine);
 }
 
-h2 {
+main h1,
+main h2,
+main h3 {
 	text-align: center;
 }
 
@@ -62,6 +76,82 @@ a {
 
 a:hover {
 	color:var(--tangerine);
+	background-color: var(--pelorous);
+}
+
+/* brand styles */
+
+.brandBox {
+	grid-column-start: span 2;
+	background-color: var(--tangerine-dull);
+}
+
+.brandBox h1,
+.brandBox h3,
+.brandBox p {
+	color: var(--teal-blue);
+}
+
+.brandBox h1,
+.brandBox h3 {
+	margin-right: 75px;
+}
+
+.brandBox p {
+	margin-left: 100px;
+}
+
+.brandBox div {
+	display: inline-block;
+	margin: 10px;
+}
+
+.brandBox ul {
+	text-align: right;
+	margin-right: 25%;
+	font-size: x-large;
+	list-style: none;
+	color: var(--teal-blue);
+}
+
+span.paletteGradient {
+	float: left;
+	position: relative;
+	width: 75px;
+	height: 100%;
+	background: linear-gradient(180deg, 
+		var(--tangerine) 10%, 
+		var(--buttercup) 30%, 
+		var(--teal-blue) 50%, 
+		var(--pelorous) 70%, 
+		var(--sky-blue) 90%);
+}
+
+.backgroundExample {
+	background-color: var(--teal-blue);
+	color: var(--buttercup);
+}
+
+.headingExample {
+	background-color: var(--teal-blue);
+}
+
+.headingExample > h3 {
+	color: var(--tangerine);
+	font-size: 80%;
+	margin: 10px;
+}
+
+.textExample {
+	background-color: var(--teal-blue);
+	color: var(--buttercup);
+}
+
+.linkExample {
+	background-color: var(--teal-blue);
+}
+
+.hoverExample {
 	background-color: var(--pelorous);
 }
 
@@ -76,6 +166,8 @@ nav {
 nav a {
 	align-content: center;
 	text-decoration: none;
+	height: 2em;
+	padding-top: .75%;
 	width: 100%;
 	border-top: 2px solid var(--pelorous);
 	border-bottom: 2px solid var(--pelorous);

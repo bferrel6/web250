@@ -21,12 +21,10 @@ function addHeader() {
     h1.innerHTML = `${name}'s ${mascot} | ${course}`;
     header.append(h1);
 
-    // add banner with slogan - add with brand design?
-    /* 
+    // add banner with slogan
     const sloganBanner = document.createElement("h3");
-    sloganBanner.innerHTML = "<em>Sail the Stars in Style</em>";
+    sloganBanner.innerHTML = "<em>Building the Deep Blue Frontier</em>";
     header.append(sloganBanner);
-    */
 
     // add nav container
     const nav = document.createElement("nav");
