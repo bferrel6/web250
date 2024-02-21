@@ -16,14 +16,14 @@ function addHeader() {
     // add name and course heading
     const h1 = document.createElement("h1");
     const name = "Ben Ferrell";
-    const mascot = "Brawny Frigatebird";
+    const mascot = "Blue Fortitude";
     const course = "WEB250";
     h1.innerHTML = `${name}'s ${mascot} | ${course}`;
     header.append(h1);
 
     // add banner with slogan
     const sloganBanner = document.createElement("h3");
-    sloganBanner.innerHTML = "<em>Building the Deep Blue Frontier</em>";
+    sloganBanner.innerHTML = "<em>Building a Seabed Utopia</em>";
     header.append(sloganBanner);
 
     // add nav container
@@ -58,11 +58,7 @@ function addFooter() {
         })
         .catch(error => console.log(error))  
 
-    // add signature
-    const sigContent = `Designed by <strong>&copy;Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
-    const signature = document.createElement("p");
-    signature.innerHTML = sigContent;
-    footer.append(signature);
+    
 
     // add validation block
     const validationBlock = document.createElement("nav");
@@ -85,6 +81,12 @@ function addFooter() {
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         })
         .catch(error => console.log(error))
+    
+    // add signature
+    const sigContent = `Designed by <strong>&copy;Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
+    const signature = document.createElement("p");
+    signature.innerHTML = sigContent;
+    footer.append(signature);
 }
 
 window.onload = 
