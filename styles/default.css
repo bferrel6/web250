@@ -36,6 +36,7 @@ header h3 {
 main{
 	display: grid;
 	line-height: 2;
+	border-top: 3px solid var(--tangerine);
 }
 
 main h2,
@@ -58,14 +59,15 @@ footer p {
 	text-align: center;
 }
 
-h1, h2, h3{
+h1, h2, h3, h5{
 	font-family: 'Eras Bold ITC', sans-serif;
 	color: var(--tangerine);
 }
 
 main h1,
 main h2,
-main h3 {
+main h3,
+main h5 {
 	text-align: center;
 }
 
@@ -74,7 +76,7 @@ a {
 }
 
 a:hover {
-	color:var(--tangerine);
+	color:var(--teal-blue);
 	background-color: var(--pelorous);
 }
 
@@ -82,18 +84,11 @@ a:hover {
 
 .brandBox {
 	grid-column-start: span 2;
-	background-color: var(--pelorous);
 }
 
-.brandBox h1,
-.brandBox h3,
-.brandBox p {
-	color: var(--teal-blue);
-}
-
-.brandBox h1,
-.brandBox h3 {
-	margin-right: 75px;
+div.brandHeading {
+	border: 3px solid var(--tangerine);
+	margin-left: 45%;
 }
 
 .brandBox p {
@@ -103,7 +98,6 @@ a:hover {
 .brandBox div {
 	display: inline-block;
 	margin: 10px;
-	border: 3px solid var(--sky-blue);
 }
 
 .brandBox ul {
@@ -111,7 +105,6 @@ a:hover {
 	margin-right: 25%;
 	font-size: x-large;
 	list-style: none;
-	color: var(--teal-blue);
 }
 
 span.paletteGradient {
@@ -160,15 +153,13 @@ span.paletteGradient {
 nav {
 	display: flex;
 	text-align: center;
-	margin: 15px auto;
 }
 
 nav a {
 	align-content: center;
 	text-decoration: none;
 	height: 2em;
-	padding-top: .75%;
 	width: 100%;
-	border-top: 2px solid var(--pelorous);
-	border-bottom: 2px solid var(--pelorous);
+	padding-top: 12px;
+	border-top: 2px solid var(--tangerine);
 }
