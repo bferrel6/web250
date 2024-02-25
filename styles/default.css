@@ -36,7 +36,7 @@ header h3 {
 main{
 	display: grid;
 	line-height: 2;
-	border-top: 3px solid var(--tangerine);
+	border-top: 2px solid var(--tangerine);
 }
 
 main h2,
